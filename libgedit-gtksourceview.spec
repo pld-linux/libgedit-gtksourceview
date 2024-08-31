@@ -6,14 +6,14 @@
 Summary:	Gedit Technology - Source code editing widget
 Summary(pl.UTF-8):	Widżet projektu Gedit Technology do edycji kodu źródłowego
 Name:		libgedit-gtksourceview
-Version:	299.2.1
+Version:	299.3.0
 Release:	1
 License:	LGPL v2.1+
 Group:		Libraries
-#Source0Download: https://github.com/gedit-technology/libgedit-gtksourceview/releases
-Source0:	https://github.com/gedit-technology/libgedit-gtksourceview/releases/download/%{version}/%{name}-%{version}.tar.xz
-# Source0-md5:	d92e9d2b10478569e0b02fa347b6ef5f
-URL:		https://gedit-technology.net/
+# also https://github.com/gedit-technology/libgedit-gtksourceview/releases
+Source0:	https://download.gnome.org/sources/libgedit-gtksourceview/299/%{name}-%{version}.tar.xz
+# Source0-md5:	085af26adc15b07131360c99923fd6fa
+URL:		https://gedit-technology.github.io/
 BuildRequires:	gettext-tools
 BuildRequires:	glib2-devel >= 1:2.74
 BuildRequires:	gtk+3-devel >= 3.20
@@ -31,7 +31,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 libgedit-gtksourceview is part of Gedit Technology
-<https://gedit-technology.net/>. It is a library that extends
+<https://gedit-technology.github.io/>. It is a library that extends
 GtkTextView, the standard GTK widget for multiline text editing. This
 library adds support for syntax highlighting, undo/redo, file loading
 and saving, search and replace, a completion system, printing,
@@ -40,12 +40,12 @@ editor.
 
 %description -l pl.UTF-8
 libgedit-gtksourceview to część projektu Gedit Technology
-<https://gedit-technology.net/>. Jest to biblioteka rozszerzająca
-GtkTextView - standardowy widżet GTK do edycji tekstu wieloliniowego.
-Biblioteka dodaje obsługę podświetlania składni, cofania/przywracania,
-wczytywania i zapisu plików, wyszukiwania i podmiany, dopełniania
-nazw, drukowania, wyświetlania numerów linii i innych funkcji typowych
-dla edytora kodu źródłowego.
+<https://gedit-technology.github.io/>. Jest to biblioteka
+rozszerzająca GtkTextView - standardowy widżet GTK do edycji tekstu
+wieloliniowego. Biblioteka dodaje obsługę podświetlania składni,
+cofania/przywracania, wczytywania i zapisu plików, wyszukiwania i
+podmiany, dopełniania nazw, drukowania, wyświetlania numerów linii i
+innych funkcji typowych dla edytora kodu źródłowego.
 
 %package devel
 Summary:	Header files for libgedit-gtksourceview library
@@ -112,7 +112,7 @@ rm -rf $RPM_BUILD_ROOT
 %files -f %{name}-300.lang
 %defattr(644,root,root,755)
 %doc NEWS README.md
-%attr(755,root,root) %{_libdir}/libgedit-gtksourceview-300.so.1
+%attr(755,root,root) %{_libdir}/libgedit-gtksourceview-300.so.2
 %{_libdir}/girepository-1.0/GtkSource-300.typelib
 
 %files devel
