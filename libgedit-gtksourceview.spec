@@ -6,13 +6,13 @@
 Summary:	Gedit Technology - Source code editing widget
 Summary(pl.UTF-8):	Widżet projektu Gedit Technology do edycji kodu źródłowego
 Name:		libgedit-gtksourceview
-Version:	299.3.0
+Version:	299.4.0
 Release:	1
 License:	LGPL v2.1+
 Group:		Libraries
 # also https://github.com/gedit-technology/libgedit-gtksourceview/releases
 Source0:	https://download.gnome.org/sources/libgedit-gtksourceview/299/%{name}-%{version}.tar.xz
-# Source0-md5:	085af26adc15b07131360c99923fd6fa
+# Source0-md5:	9e89aac15d58047bae0d86299358120f
 URL:		https://gedit-technology.github.io/
 BuildRequires:	gettext-tools
 BuildRequires:	glib2-devel >= 1:2.74
@@ -112,7 +112,7 @@ rm -rf $RPM_BUILD_ROOT
 %files -f %{name}-300.lang
 %defattr(644,root,root,755)
 %doc NEWS README.md
-%attr(755,root,root) %{_libdir}/libgedit-gtksourceview-300.so.2
+%attr(755,root,root) %{_libdir}/libgedit-gtksourceview-300.so.3
 %{_libdir}/girepository-1.0/GtkSource-300.typelib
 
 %files devel
