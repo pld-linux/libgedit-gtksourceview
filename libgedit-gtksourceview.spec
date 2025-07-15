@@ -7,7 +7,7 @@ Summary:	Gedit Technology - Source code editing widget
 Summary(pl.UTF-8):	Widżet projektu Gedit Technology do edycji kodu źródłowego
 Name:		libgedit-gtksourceview
 Version:	299.4.0
-Release:	2
+Release:	3
 License:	LGPL v2.1+
 Group:		Libraries
 # also https://github.com/gedit-technology/libgedit-gtksourceview/releases
